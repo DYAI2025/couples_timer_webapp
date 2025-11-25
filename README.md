@@ -19,7 +19,7 @@ Ein webbasiertes Hilfstool für das strukturierte Zwiegespräch nach Möller. Da
    ```bash
    npm install
    ```
-3. Entwicklungserver starten:
+3. Entwicklungsserver starten:
    ```bash
    npm run dev
    ```

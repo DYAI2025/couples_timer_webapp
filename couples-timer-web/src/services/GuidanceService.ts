@@ -1,5 +1,5 @@
 import { PhaseType } from '../domain/PhaseType';
-import { GuidanceLevel, GuidanceSettings, getGuidanceSettings } from '../domain/GuidanceLevel';
+import { GuidanceLevel, getGuidanceSettings } from '../domain/GuidanceLevel';
 import { t } from 'i18next';
 
 /**

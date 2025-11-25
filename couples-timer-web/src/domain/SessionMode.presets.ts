@@ -1,6 +1,6 @@
-import { PhaseConfig } from './PhaseConfig';
+import type { PhaseConfig } from './PhaseConfig';
 import { PhaseType } from './PhaseType';
-import { SessionMode } from './SessionMode';
+import type { SessionMode } from './SessionMode';
 import { GuidanceLevel } from './GuidanceLevel';
 import { calculateTotalDuration } from './SessionMode';
 

@@ -1,15 +1,14 @@
-import { 
-  SessionMode, 
-  PhaseType, 
-  SessionStateType, 
-  SessionState, 
+import type { SessionMode, SessionState } from '../domain';
+import {
+  PhaseType,
+  SessionStateType,
   isValidSessionMode,
   getAudioFileNameForEvent,
   AudioEvent
 } from '../domain';
 import { TimerService } from '../services/TimerService';
-import { audioService, AudioServiceProtocol } from '../services/AudioService';
-import { guidanceService, GuidanceServiceProtocol } from '../services/GuidanceService';
+import { audioService as defaultAudioService, type AudioServiceProtocol } from '../services/AudioService';
+import { guidanceService as defaultGuidanceService, type GuidanceServiceProtocol } from '../services/GuidanceService';
 
 export interface SessionEngineProtocol {
   start: (mode: SessionMode) => void;
@@ -43,8 +42,8 @@ export class SessionEngine implements SessionEngineProtocol {
 
   constructor(
     timerService: TimerService = new TimerService(),
-    audioService: AudioServiceProtocol = audioService,
-    guidanceService: GuidanceServiceProtocol = guidanceService
+    audioService: AudioServiceProtocol = defaultAudioService,
+    guidanceService: GuidanceServiceProtocol = defaultGuidanceService
   ) {
     this.timerService = timerService;
     this.audioService = audioService;

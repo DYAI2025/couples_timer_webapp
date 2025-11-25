@@ -1,5 +1,3 @@
-import { PhaseType } from './PhaseType';
-
 export enum SessionStateType {
   IDLE = 'idle',
   RUNNING = 'running',

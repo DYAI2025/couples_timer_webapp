@@ -1,4 +1,4 @@
-import { PhaseConfig } from './PhaseConfig';
+import type { PhaseConfig } from './PhaseConfig';
 import { GuidanceLevel } from './GuidanceLevel';
 
 export interface SessionMode {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { SessionMode, formatTotalDuration, countRounds } from '../domain';
+import type { SessionMode } from '../domain';
+import { formatTotalDuration, countRounds } from '../domain';
 import { useTranslation } from 'react-i18next';
 
 interface ModeCardProps {

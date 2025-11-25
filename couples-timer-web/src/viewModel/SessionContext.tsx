@@ -1,8 +1,6 @@
-import { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import type { ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, useCallback, type ReactNode } from 'react';
 import { SessionEngine } from '../domain/SessionEngine';
-import { SessionStateType, PhaseType, Speaker, getSpeakerForPhase } from '../domain';
-import type { SessionMode } from '../domain';
+import { SessionStateType, PhaseType, Speaker, getSpeakerForPhase, type SessionMode } from '../domain';
 import { TimerService } from '../services/TimerService';
 import { audioService } from '../services/AudioService';
 import { guidanceService } from '../services/GuidanceService';

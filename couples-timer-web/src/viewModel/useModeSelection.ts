@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import type { SessionMode } from '../domain';
 import {
+  type SessionMode,
   getPresetModes,
   createCustomModeTemplate,
   isValidSessionMode

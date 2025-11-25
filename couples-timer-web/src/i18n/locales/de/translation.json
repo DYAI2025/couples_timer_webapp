@@ -1,0 +1,81 @@
+{
+  "common": {
+    "appTitle": "Couples Timer",
+    "back": "Zurück",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "continue": "Weiter",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "stop": "Stopp"
+  },
+  "modeSelection": {
+    "title": "Partnerschaftliches Zwiegespräch nach Moeller",
+    "subtitle": "Wählen Sie einen Gesprächsmodus",
+    "maintainMode": "Erhaltungsmodus",
+    "commitmentMode": "Verpflichtungsmodus",
+    "listeningMode": "Zuhörmodus",
+    "customMode": "Benutzerdefinierter Modus",
+    "createCustom": "Benutzerdefinierten Modus erstellen",
+    "selectMode": "Modus auswählen",
+    "description": "Eine neutrale, unparteiische App, die das strukturierte Gesprächsformat begleitet"
+  },
+  "session": {
+    "speakerA": "Sprecher A",
+    "speakerB": "Sprecher B",
+    "prepPhase": "Vorbereitung",
+    "slotPhase": "Sprechslot",
+    "transitionPhase": "Übergang",
+    "closingPhase": "Schluss",
+    "cooldownPhase": "Abklingzeit",
+    "noAftertalk": "Kein Nachgespräch",
+    "remainingTime": "Verbleibende Zeit",
+    "timeUp": "Zeit abgelaufen!",
+    "nextSpeaker": "Nächster Sprecher",
+    "cooldownInstruction": "Nehmen Sie sich einen Moment Zeit zum Reflektieren. Keine weitere Diskussion über die besprochenen Themen."
+  },
+  "sequenceBuilder": {
+    "title": "Benutzerdefinierter Modus Editor",
+    "addPhase": "Phase hinzufügen",
+    "phaseType": "Phasentyp",
+    "duration": "Dauer (Sekunden)",
+    "durationRange": "Dauerbereich",
+    "min": "Min",
+    "max": "Max",
+    "deletePhase": "Phase löschen",
+    "phaseTypes": {
+      "prep": "Vorbereitung",
+      "slotA": "Sprecher A Slot",
+      "slotB": "Sprecher B Slot",
+      "transition": "Übergang",
+      "closingA": "Abschluss A",
+      "closingB": "Abschluss B",
+      "cooldown": "Abklingzeit"
+    },
+    "preview": "Vorschau",
+    "invalidConfig": "Ungültige Konfiguration: Mindestens ein A-Slot und ein B-Slot erforderlich",
+    "saveCustomMode": "Benutzerdefinierten Modus speichern",
+    "modeName": "Modusname"
+  },
+  "guidance": {
+    "prepTips": {
+      "breathing": "Atmen Sie tief durch und zentrieren Sie sich.",
+      "intention": "Setzen Sie eine Absicht für dieses Gespräch.",
+      "openMind": "Gehen Sie mit offenem Geist und Herzen heran."
+    },
+    "transitionTips": {
+      "switchFocus": "Wechseln Sie sanft Ihren Fokus zur Erfahrung Ihres Partners.",
+      "listenDeeply": "Hören Sie nicht nur zu, um zu antworten, sondern um zu verstehen.",
+      "breathe": "Atmen Sie durch, bevor Sie zu sprechen beginnen."
+    },
+    "cooldownTips": {
+      "reflect": "Nehmen Sie sich Zeit zum Reflektieren des Gesprächs.",
+      "appreciate": "Wertschätzen Sie die Zeit, die Sie zusammen verbracht haben.",
+      "integrate": "Erlauben Sie dem, was aufgekommen ist, sich innerlich zu integrieren."
+    }
+  }
+}

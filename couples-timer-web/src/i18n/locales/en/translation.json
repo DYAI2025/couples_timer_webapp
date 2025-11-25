@@ -1,0 +1,81 @@
+{
+  "common": {
+    "appTitle": "Couples Timer",
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "continue": "Continue",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "stop": "Stop"
+  },
+  "modeSelection": {
+    "title": "Partnership Conversation after Moeller",
+    "subtitle": "Choose a conversation mode",
+    "maintainMode": "Maintain Mode",
+    "commitmentMode": "Commitment Mode",
+    "listeningMode": "Listening Mode",
+    "customMode": "Custom Mode",
+    "createCustom": "Create Custom Mode",
+    "selectMode": "Select Mode",
+    "description": "A neutral, impartial app that guides the structured conversation format"
+  },
+  "session": {
+    "speakerA": "Speaker A",
+    "speakerB": "Speaker B",
+    "prepPhase": "Preparation",
+    "slotPhase": "Speaking Slot",
+    "transitionPhase": "Transition",
+    "closingPhase": "Closing",
+    "cooldownPhase": "Cooldown",
+    "noAftertalk": "No Aftertalk",
+    "remainingTime": "Remaining Time",
+    "timeUp": "Time's Up!",
+    "nextSpeaker": "Next Speaker",
+    "cooldownInstruction": "Take a moment to reflect. No further discussion about the topics discussed."
+  },
+  "sequenceBuilder": {
+    "title": "Custom Mode Builder",
+    "addPhase": "Add Phase",
+    "phaseType": "Phase Type",
+    "duration": "Duration (seconds)",
+    "durationRange": "Duration Range",
+    "min": "Min",
+    "max": "Max",
+    "deletePhase": "Delete Phase",
+    "phaseTypes": {
+      "prep": "Preparation",
+      "slotA": "Speaker A Slot",
+      "slotB": "Speaker B Slot",
+      "transition": "Transition",
+      "closingA": "Closing A",
+      "closingB": "Closing B",
+      "cooldown": "Cooldown"
+    },
+    "preview": "Preview",
+    "invalidConfig": "Invalid configuration: must have at least one A slot and one B slot",
+    "saveCustomMode": "Save Custom Mode",
+    "modeName": "Mode Name"
+  },
+  "guidance": {
+    "prepTips": {
+      "breathing": "Take a deep breath and center yourself.",
+      "intention": "Set an intention for this conversation.",
+      "openMind": "Approach with an open mind and heart."
+    },
+    "transitionTips": {
+      "switchFocus": "Gently shift your attention to your partner's experience.",
+      "listenDeeply": "Listen not just to respond, but to understand.",
+      "breathe": "Take a breath before you begin speaking."
+    },
+    "cooldownTips": {
+      "reflect": "Take time to reflect on the conversation.",
+      "appreciate": "Appreciate the time you spent together.",
+      "integrate": "Allow what emerged to integrate internally."
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { 
-  SessionMode, 
-  getPresetModes, 
+import type { SessionMode } from '../domain';
+import {
+  getPresetModes,
   createCustomModeTemplate,
-  isValidSessionMode 
+  isValidSessionMode
 } from '../domain';
 import { persistenceService } from '../services/PersistenceService';
 

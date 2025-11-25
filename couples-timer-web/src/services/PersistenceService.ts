@@ -1,4 +1,4 @@
-import { SessionMode } from '../domain/SessionMode';
+import type { SessionMode } from '../domain/SessionMode';
 
 const CUSTOM_MODES_KEY = 'couples_timer_custom_modes';
 

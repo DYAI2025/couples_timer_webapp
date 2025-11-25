@@ -1,4 +1,4 @@
-import { AUDIO_PATHS, AudioFileName } from '../services/AudioService';
+import type { AudioFileName } from '../services/AudioService';
 
 /**
  * Represents different audio events in the session

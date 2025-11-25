@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { 
-  SessionMode, 
-  PhaseConfig, 
-  PhaseType, 
-  GuidanceLevel, 
+import type { SessionMode, PhaseConfig } from '../domain';
+import {
+  PhaseType,
+  GuidanceLevel,
   createPhaseConfig,
-  isValidPhaseConfig,
   formatDuration,
   isValidSessionMode
 } from '../domain';
@@ -20,8 +18,6 @@ const SequenceBuilderPage: React.FC = () => {
   const { t } = useTranslation();
   
   const initialMode: SessionMode | null = state?.mode || null;
-  
-  const [mode, setMode] = useState<SessionMode | null>(initialMode);
   const [name, setName] = useState(initialMode?.name || '');
   const [phases, setPhases] = useState<PhaseConfig[]>(initialMode?.phases || []);
   const [guidanceLevel, setGuidanceLevel] = useState<GuidanceLevel>(
@@ -74,9 +70,18 @@ const SequenceBuilderPage: React.FC = () => {
       return;
     }
 
+    const baseMode: SessionMode = initialMode ?? {
+      id: `custom_${Date.now()}`,
+      name,
+      phases: [],
+      guidanceLevel,
+      isLocked: false,
+      totalDuration: 0
+    };
+
     const newMode: SessionMode = {
-      ...mode!,
-      id: mode?.id || `custom_${Date.now()}`,
+      ...baseMode,
+      id: initialMode?.id || baseMode.id,
       name,
       phases,
       guidanceLevel,
@@ -100,7 +105,16 @@ const SequenceBuilderPage: React.FC = () => {
   // Check if mode is valid
   const isModeValid = () => {
     if (!name.trim()) return false;
-    return isValidSessionMode({ ...mode, name, phases, guidanceLevel });
+    const candidateMode: SessionMode = {
+      id: initialMode?.id || 'preview_mode',
+      name,
+      phases,
+      guidanceLevel,
+      isLocked: false,
+      totalDuration: phases.reduce((sum, phase) => sum + phase.duration, 0)
+    };
+
+    return isValidSessionMode(candidateMode);
   };
 
   return (

@@ -11,7 +11,8 @@
     "start": "Start",
     "pause": "Pause",
     "resume": "Resume",
-    "stop": "Stop"
+    "stop": "Stop",
+    "required": "is required"
   },
   "modeSelection": {
     "title": "Partnership Conversation after Moeller",
@@ -40,6 +41,7 @@
   },
   "sequenceBuilder": {
     "title": "Custom Mode Builder",
+    "createTitle": "Create Custom Mode",
     "addPhase": "Add Phase",
     "phaseType": "Phase Type",
     "duration": "Duration (seconds)",
@@ -57,9 +59,11 @@
       "cooldown": "Cooldown"
     },
     "preview": "Preview",
+    "noPhases": "No phases added yet",
     "invalidConfig": "Invalid configuration: must have at least one A slot and one B slot",
     "saveCustomMode": "Save Custom Mode",
-    "modeName": "Mode Name"
+    "modeName": "Mode Name",
+    "guidanceLevel": "Guidance Level"
   },
   "guidance": {
     "prepTips": {

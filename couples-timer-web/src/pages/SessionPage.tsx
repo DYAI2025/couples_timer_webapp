@@ -8,13 +8,8 @@ import {
   GuidanceTip, 
   CooldownView 
 } from '../components';
-import { 
-  PhaseType, 
-  SessionMode, 
-  SessionStateType,
-  getSpeakerForPhase,
-  Speaker
-} from '../domain';
+import type { SessionMode } from '../domain';
+import { PhaseType } from '../domain';
 import { useTranslation } from 'react-i18next';
 
 // SessionPage component wrapped with SessionProvider
@@ -30,7 +25,6 @@ const SessionPageContent: React.FC = () => {
     getCurrentSpeaker,
     getCurrentPhaseDuration,
     getRemainingTime,
-    getProgress,
     getGuidanceTip,
     isRunning,
     isPaused,

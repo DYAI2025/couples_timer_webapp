@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhaseType, getSpeakerForPhase, Speaker } from '../domain';
+import { Speaker, PhaseType } from '../domain';
 import { useTranslation } from 'react-i18next';
 
 interface PhaseIndicatorProps {

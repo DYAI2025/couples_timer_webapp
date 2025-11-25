@@ -11,7 +11,8 @@
     "start": "Start",
     "pause": "Pause",
     "resume": "Fortsetzen",
-    "stop": "Stopp"
+    "stop": "Stopp",
+    "required": "ist erforderlich"
   },
   "modeSelection": {
     "title": "Partnerschaftliches Zwiegespräch nach Moeller",
@@ -40,6 +41,7 @@
   },
   "sequenceBuilder": {
     "title": "Benutzerdefinierter Modus Editor",
+    "createTitle": "Benutzerdefinierten Modus erstellen",
     "addPhase": "Phase hinzufügen",
     "phaseType": "Phasentyp",
     "duration": "Dauer (Sekunden)",
@@ -57,9 +59,11 @@
       "cooldown": "Abklingzeit"
     },
     "preview": "Vorschau",
+    "noPhases": "Noch keine Phasen hinzugefügt",
     "invalidConfig": "Ungültige Konfiguration: Mindestens ein A-Slot und ein B-Slot erforderlich",
     "saveCustomMode": "Benutzerdefinierten Modus speichern",
-    "modeName": "Modusname"
+    "modeName": "Modusname",
+    "guidanceLevel": "Begleitungsgrad"
   },
   "guidance": {
     "prepTips": {

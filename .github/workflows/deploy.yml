@@ -42,7 +42,7 @@ jobs:
         run: npm run build
 
       - name: Include custom domain
-        run: cp ../CNAME dist/CNAME
+        run: cp -v ../CNAME dist/CNAME || echo "Warning: CNAME file not copied"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
